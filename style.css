@@ -1,27 +1,48 @@
-.wrap{
-    display: flex;
-    flex-flow: row wrap; /*mesma coisa que colocar o flex direction e o wrap*/
-    justify-content: center;  
-    width: 90vw;
-    /*font-size: 1em = serve para a responsividade de fontes, 
-    onde pega o tamanho de fonte padrao do dispositivo e adequa ele*/
-    
-    margin: 30px auto; /*define um padrao a todas as margens usando como base o dispositivo em que o site esta sendo aberto*/
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
+header{
+    margin: 0 10%;
+    margin-top: 2.5%;
+}
+
+header>h1{
+    margin: 0;
+    font-weight: 500;
+}
+
+header>span{
+    font-style: italic;
+}
+
+.wrap{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;  
+    width: 90vw;
+   margin: 30px auto; }
+
 .box{
-    color: #ffffff;
-    background: #ddd;
     width: 20%;
-    line-height: 100px; /*configura o tamanho, neste caso altura da linha*/
     margin: 20px 20px;
     cursor: pointer;
     text-align: center;
 }
 
-.red{
-   background: rgba(139,0,0,0.5);
+.box>div>img{
+    width: 100%;
+    height: 100%;
 }
+
+.box>div>p{
+    margin: 0;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 14pt;
+    width: 100%;
+}
+
 
 .scaleX{
     transform: scaleX(1); /*trabalha com o eixo X*/
